@@ -1,0 +1,44 @@
+@font-face {
+    font-family: BalooTammudu;
+    src: url("../fonts/Baloo/BalooTammudu2-Medium.ttf");
+[font-weight: medium];
+[font-styel: normal];
+}
+@font-face {
+    font-family: Lato;
+    src: url("../fonts/Lato/Lato-Regular.ttf");
+[font-weight: normal];
+[font-styel: normal];
+}
+
+*{
+    font-size: 16px;
+}
+
+h2{
+    font-family: BalooTammudu;
+    text-align: center;
+}
+
+main{
+    padding: 2em 0;
+    height: 100vh;
+}
+
+#login{
+    font-family: Lato;
+}
+
+#login .container{
+    background: white;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+#login h2{
+    margin: 1em 0;
+}
+
+#login button{
+    width: 100%;
+}
