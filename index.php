@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="res/bootstrap/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" type="text/css" href="res/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="res/css/style.css">
-    <title>Parcial de Programacion y Clientes Web</title>
+    <title>Parcial de Programación y Clientes Web</title>
 </head>
 <body>
 
@@ -17,10 +17,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <img src="res/img/logo.png" alt="Logo de addcar" class="img-fluid">
+                    <h1>addcar app
+                        <img src="res/img/logo.png" alt="Logo de addcar" class="img-fluid">
+                    </h1>
                 </div>
                 <div class="col">
-                    <h2>Identificate para poder acceder</h2>
+                    <h2>Identifícate para poder acceder</h2>
                     <form action="">
                         <div class="form-group">
                             <label for="username">Ingrese su usuario</label>
