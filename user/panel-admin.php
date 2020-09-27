@@ -6,8 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="res/css/style.css">
-    <link rel="icon" href="res/img/ico.svg">
+    <link rel="stylesheet" type="text/css" href="../res/css/style.css">
+    <link rel="icon" href="../res/img/ico.svg">
     <title>Parcial de Programación y Clientes Web</title>
 </head>
 <body>
@@ -49,12 +49,12 @@
                         <tr>
                             <th scope="row">1</th>
                             <td>Mark</td>
-                            <td><a href="#"><img class="edit-user" src="res/img/edit.svg" alt="Edit User"></a></td>
+                            <td><a href="#"><img class="edit-user" src="../res/img/edit.svg" alt="Edit User"></a></td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
                             <td>Jacob</td>
-                            <td><a href="#"><img class="edit-user" src="res/img/edit.svg" alt="Edit User"></a></td>
+                            <td><a href="#"><img class="edit-user" src="../res/img/edit.svg" alt="Edit User"></a></td>
                         </tr>
                         </tbody>
                     </table>
@@ -83,7 +83,7 @@
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script type="text/javascript" src="res/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="res/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="../res/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../res/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

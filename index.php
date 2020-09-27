@@ -12,37 +12,42 @@
 </head>
 <body>
 
-<main>
-    <section id="login" class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="logo col-12">
-                    <h1>addcar app</h1>
-                </div>
-                <div class="form col">
-                    <h2>Panel Administrativo</h2>
-                    <p>Identifícate para poder acceder</p>
-                    <form action="#">
-                        <div class="form-group">
-                            <label for="username">Ingrese su usuario</label>
-                            <input type="text" class="form-control" id="username" placeholder="">
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Ingrese su password</label>
-                            <input type="password" class="form-control" id="password" placeholder="">
-                        </div>
-                        <div class="button">
-                            <button type="submit" class="btn btn-outline-primary">Identificarme</button>
-                        </div>
-                    </form>
-
-                    <!--TODO: LOGIN CON REDES SOCIALES, FB, G+, ETC-->
-
-                </div>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><h1>Addcar App</h1></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Configuración</a>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Acerca De</a>
             </div>
         </div>
-    </section>
-</main>
+    </nav>
+</header>
+
+<main></main>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="redes col-12">
+                <ul>
+                    <li><a href="#" class="social fb"></a></li>
+                    <li><a href="#" class="social tw"></a></li>
+                    <li><a href="#" class="social ig"></a></li>
+                </ul>
+            </div>
+            <div class="bgfooter col-12"></div>
+            <div class="copy col-12">
+                <p>Todos los derechos reservados para @FrancoCinnante</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 
