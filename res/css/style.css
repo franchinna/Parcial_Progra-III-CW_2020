@@ -6,54 +6,67 @@
 }
 
 @font-face {
-    font-family: Lato;
+    font-family: Lato-Light;
+    src: url("../fonts/Lato/Lato-Light.ttf");
+[font-weight: ligher];
+[font-style: normal];
+}
+
+@font-face {
+    font-family: Lato-Regular;
     src: url("../fonts/Lato/Lato-Regular.ttf");
 [font-weight: normal];
 [font-style: normal];
 }
 
-*{
+* {
     font-size: 16px;
     color: #727270;
+    font-family: Lato-Regular;
 }
 
 /* ---ESTILOS GENERALES--- */
 /* INICIO */
 
-h1{
+h1 {
     font-size: 0px;
 }
 
-.logo{
+.logo {
     margin: 0 0 3em 0;
 }
 
-h2{
+h2 {
     font-family: "Open Sans";
     font-weight: bold;
     font-size: 1.7em;
     margin-bottom: .7em;
 }
 
-main{
+main {
     padding: 2em 0;
 }
 
 /* A */
 
-a .btn, a .btn:hover{
+a .btn, a .btn:hover {
     text-decoration: none;
 }
 
-a.btn{
+a.btn {
     text-decoration: none;
-    color:#727270;
-
+    color: #727270;
 }
 
-a.btn:hover{
+a.btn:hover {
     color: #08AEEA;
     transition: color .5s;
+}
+
+input::placeholder {
+    font-family: Lato-Light;
+    font-weight: lighter;
+    font-style: normal;
 }
 
 /* BOTONES */
@@ -75,15 +88,16 @@ a.btn:hover{
 }
 
 .btn-outline-primary.focus, .btn-outline-primary:focus {
-    box-shadow: 0 0 0 .1rem rgba(8,174,234,.5);
+    box-shadow: 0 0 0 .1rem rgba(8, 174, 234, .5);
 }
+
 /* FIN */
 
 
 /* ---HEADER--- */
 /* INICIO */
 
-header h1{
+header h1 {
     background: url("../img/logo-h1.svg") no-repeat center center;
     height: 35px;
     width: 150px;
@@ -91,7 +105,7 @@ header h1{
 }
 
 .navbar-light .navbar-toggler {
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, .5);
     border-color: transparent;
 }
 
@@ -107,21 +121,21 @@ header h1{
 /** ---PANTALLA INDEX---**/
 /* INICIO */
 
-#warning{
+#warning {
     margin-top: 2em;
 }
 
-#warning .row{
+#warning .row {
     justify-content: center;
     align-items: center;
 }
 
-#warning .img-warning{
+#warning .img-warning {
     text-align: center;
     margin-bottom: 3em;
 }
 
-#warning .img-fluid{
+#warning .img-fluid {
     width: 100%;
 }
 
@@ -130,19 +144,23 @@ header h1{
 /* ---PANTALLA DE INICIAR SESION--- */
 /* INICIO */
 
-#registro{
+#registro {
     text-align: center;
 }
 
-#registro .row{
+#registro {
+    max-width: 400px;
+}
+
+#registro .row {
     justify-content: center;
 }
 
-#registro form{
+#registro form {
     text-align: left;
 }
 
-#registro .redes ul{
+#registro .redes ul {
     list-style: none;
     padding: 1em;
     margin: 0;
@@ -153,12 +171,11 @@ header h1{
 /* ---PANTALLA DE INICIAR SESION--- */
 /* INICIO */
 
-#iniciarSesion{
-    font-family: Lato;
+#iniciarSesion {
     max-width: 400px;
 }
 
-#iniciarSesion h1{
+#iniciarSesion h1 {
     font-size: 0px;
     text-align: center;
     background: url("../img/logo.svg") no-repeat center center;
@@ -167,7 +184,7 @@ header h1{
     margin: 0 auto;
 }
 
-#iniciarSesion .container{
+#iniciarSesion .container {
     background: white;
     padding: 1em;
     border-radius: 20px;
@@ -177,41 +194,42 @@ header h1{
 #iniciarSesion .form p,
 #registro h2,
 #registro p,
-#registro ul{
+#registro ul {
     text-align: center;
 }
 
 #iniciarSesion form p,
 #registro form p,
 #iniciarSesion form label,
-#registro form label{
+#registro form label {
     font-size: .8em;
 }
 
 #iniciarSesion form button,
-#registro form button{
+#registro form button {
     width: 100%;
 }
 
-#iniciarSesion form{
+#iniciarSesion form {
     margin-top: 2em;
 }
 
 #iniciarSesion .button,
-#registro .button{
+#registro .button {
     text-align: center;
     margin-top: 2em;
 }
+
 /* FIN */
 
 /* PANTALLA DE ADM USUARIOS*/
 /* INICIO */
 
-#list-user .table-responsive{
+#list-user .table-responsive {
     margin-top: 3em;
 }
 
-#list-user .edit-user{
+#list-user .edit-user {
     width: 25px;
     height: 25px;
     float: right;
@@ -221,53 +239,53 @@ header h1{
 /* ESTILOS DEL FOOTER*/
 /* INICIO */
 
-footer{
+footer {
     margin-top: 2em;
 }
 
-footer, footer p{
+footer, footer p {
     text-align: center;
     font-size: 0.7em;
     color: white;
 }
 
-footer .redes{
+footer .redes {
     padding: 2em 0;
     background: #08AEEA;
 }
 
-footer .redes ul{
+footer .redes ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 footer .redes ul li,
-#registro .redes ul li{
+#registro .redes ul li {
     display: inline-block;
 }
 
 footer .social,
-#registro .social{
+#registro .social {
     width: 35px;
     height: 35px;
     margin: 0 .5em;
     display: block;
 }
 
-.tw{
+.tw {
     background: url("../img/twitter.svg") no-repeat center center;
 }
 
-.fb{
+.fb {
     background: url("../img/facebook.svg") no-repeat center center;
 }
 
-.ig{
+.ig {
     background: url("../img/instagram.svg") no-repeat center center;
 }
 
-footer .bgfooter{
+footer .bgfooter {
     background: url("../img/footer.svg") no-repeat;
     width: 100%;
     height: 225px;
@@ -275,11 +293,12 @@ footer .bgfooter{
     background-size: cover;
 }
 
-footer .copy{
+footer .copy {
     background: #636362;
     margin: 0;
 }
-footer .copy p{
+
+footer .copy p {
     margin: 0;
 }
 

@@ -1,3 +1,42 @@
+<?php
+require 'db/conexion.php';
+
+$seccion = $_GET['s'] ?? 'home';
+
+$seccionesPermitidas = [
+    'mantenimiento' => [
+        'title' => 'Oops! Página en mantenimiento!!'
+    ],
+    'registro' => [
+        'title' => 'Completa el registro de tu usaurio'
+    ],
+    'login' => [
+        'title' => 'Ingresa y empieza a gestionar tu perfil'
+    ]
+];
+
+if (!isset($seccionesPermitidas[$seccion])) {
+    $seccion = "mantenimiento";
+}
+
+
+// Preguntamos si llegó algún mensaje de éxito.
+if (isset($_SESSION['exito'])) {
+    $mensajeExito = $_SESSION['exito'];
+    unset($_SESSION['exito']);
+} else {
+    $mensajeExito = "";
+}
+
+// Preguntamos si llegó algún mensaje de error.
+if (isset($_SESSION['error'])) {
+    $mensajeError = $_SESSION['error'];
+    unset($_SESSION['error']);
+} else {
+    $mensajeError = "";
+}
+
+?>
 <!doctype html>
 <html lang="es">
 <head>
@@ -8,38 +47,48 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="res/css/style.css">
     <link rel="icon" href="res/img/ico.svg">
-    <title>Parcial de Programación y Clientes Web</title>
+    <title><?= $seccionesPermitidas[$seccion]['title']; ?></title>
 </head>
 <body>
 
-<?php require_once('templates/header.php') ?>
+<header>
+    <?php require_once('res/templates/header.php') ?>
+</header>
 
 <main>
-
-    <section id="warning" class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="img-warning col-12 col-sm-3">
-                    <img src="res/img/warning.svg" alt="imagen de advertencia" class="img-fluid">
-                </div>
-                <div class="col-12 col-sm-6 align-items-center">
-                    <h2>
-                        ¡Hola! Todavía nuestro sitio está en construcción.
-                    </h2>
-                    <p>¡¡Pero no te preocupes!! Mientras avanzamos con esto, puedes empezas a gestionar tu perfil
-                        haciendo click <a href="login.php"><b>aquí</b></a></p>
-                    <p>O si eres nuevo, puedes crear tu usuario <a href="register.php"><b>aquí</b></a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- Agregamos el mensaje de éxito, si es que hay. -->
+    <?php
+    if (!empty($mensajeExito)):
+        ?>
+        <div class="status-message status-success"><?= $mensajeExito; ?></div>
+    <?php
+    endif;
+    ?>
+    <!-- Agregamos el mensaje de error, si es que hay. -->
+    <?php
+    if (!empty($mensajeError)):
+        ?>
+        <div class="status-message status-error"><?= $mensajeError; ?></div>
+    <?php
+    endif;
+    ?>
+    <?php
+    if (file_exists('secciones/' . $seccion . '.php')) {
+        require 'secciones/' . $seccion . '.php';
+    } else {
+        require 'secciones/mantenimiento.php';
+    }
+    ?>
 </main>
 
-<?php require_once('templates/footer.php') ?>
+<footer>
+    <?php if (!($seccion == 'login' || $seccion == 'registro')) {
+        require_once('res/templates/footer.php');
+    } ?>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script type="text/javascript" src="res/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="res/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="res/bootstrap/js/bootstrap.min.js"></script>
+<script src="res/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

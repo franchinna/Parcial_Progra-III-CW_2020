@@ -20,14 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f195b7e-0a81-4ca0-9bc2-79a87df8526a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/secciones/mantenimiento.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secciones/registro.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/addcar_diagram.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/db/addcar_diagram.mwb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/addcar_diagram.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/db/addcar_diagram.mwb.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/editables/footer.ai" beforeDir="false" afterPath="$PROJECT_DIR$/editables/footer.ai" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/secciones/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/res/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/img/footer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/res/img/footer.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/res/templates/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/res/templates/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/panel-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/secciones/panel-admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +57,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Parcial_Progra-III-CW_2020\secciones" />
+      <recent name="C:\xampp\htdocs\Parcial_Progra-III-CW_2020\res" />
       <recent name="C:\xampp\htdocs\Parcial_Progra-III-CW_2020\" />
       <recent name="C:\xampp\htdocs\Parcial_Progra-III-CW_2020\user" />
       <recent name="C:\xampp\htdocs\Parcial_Progra-III-CW_2020" />
@@ -75,7 +81,7 @@
       <workItem from="1600826581784" duration="2473000" />
       <workItem from="1600900788282" duration="14474000" />
       <workItem from="1601083269178" duration="1382000" />
-      <workItem from="1601171791626" duration="8447000" />
+      <workItem from="1601171791626" duration="17977000" />
     </task>
     <servers />
   </component>
@@ -107,10 +113,10 @@
       <screen x="0" y="0" width="1473" height="864" />
     </state>
     <state x="192" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1473.864/-1920.0.1858.1080@0.0.1473.864" timestamp="1600826598945" />
-    <state x="-1246" y="521" key="NewPhpFileDialog" timestamp="1601176903222">
+    <state x="-1246" y="521" key="NewPhpFileDialog" timestamp="1601229815731">
       <screen x="-1920" y="0" width="1858" height="1080" />
     </state>
-    <state x="-1246" y="521" key="NewPhpFileDialog/0.0.1473.864/-1920.0.1858.1080@-1920.0.1858.1080" timestamp="1601176903222" />
+    <state x="-1246" y="521" key="NewPhpFileDialog/0.0.1473.864/-1920.0.1858.1080@-1920.0.1858.1080" timestamp="1601229815731" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1601172468583">
       <screen x="-1920" y="0" width="1858" height="1080" />
     </state>
