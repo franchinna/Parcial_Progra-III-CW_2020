@@ -12,37 +12,50 @@
 </head>
 <body>
 
+<?php require_once('templates/header.php') ?>
+
 <main>
-    <section id="iniciarSesion" class="container-fluid">
+    <section id="registro" class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="logo col-12">
-                    <h1>addcar app</h1>
+                <div class="redes col-12 col-sm-8 col-lg-8">
+                    <h2>Registra tu usuario</h2>
+                    <p>Puedes utilizar las siguientes redes sociales para iniciar sesión</p>
+                    <ul>
+                        <li><a href="#" class="social fb"></a></li>
+                        <li><a href="#" class="social tw"></a></li>
+                        <li><a href="#" class="social ig"></a></li>
+                    </ul>
                 </div>
-                <div class="form col-12">
-                    <h2>Panel Administrativo</h2>
-                    <p>Identifícate para poder acceder</p>
+                <div class="col-12 col-sm-8 col-lg-8">
+                    <hr>
+                    <p>O<br>Puedes completar el siguiente formulario.</p>
+
                     <form action="#">
                         <div class="form-group">
-                            <label for="username">Ingrese su usuario</label>
-                            <input type="text" class="form-control" id="username" placeholder="">
+                            <label for="email">Ingresa tu correo</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="emailConfirm">Ingresa nuevamente tu correo</label>
+                            <input type="email" class="form-control" id="emailConfirm">
                         </div>
                         <div class="form-group">
                             <label for="password">Ingrese su password</label>
                             <input type="password" class="form-control" id="password" placeholder="">
                         </div>
+                        <div class="form-group">
+                            <label for="passwordConfirm">Ingresa nuevamente su password</label>
+                            <input type="password" class="form-control" id="passwordConfirm" placeholder="">
+                        </div>
                         <div class="button">
                             <button type="submit" class="btn btn-outline-primary">Identificarme</button>
                         </div>
                     </form>
-
-                    <!--TODO: LOGIN CON REDES SOCIALES, FB, G+, ETC-->
                 </div>
-
-                <div class="col-12 text-center">
+                <div class="col-12 col-sm-8 col-lg-8 my-2">
                     <hr>
-                    <a href="register.php" class="btn">¿No estás registrado?</a>
-                    <a href="index.php" class="btn">Volver a la página de inicio</a>
+                    <a href="index.php" class="btn">Volver a la página de incio</a>
                 </div>
             </div>
         </div>

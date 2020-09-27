@@ -12,44 +12,31 @@
 </head>
 <body>
 
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><h1>Addcar App</h1></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
-                <a class="nav-link" href="#">Configuración</a>
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Acerca De</a>
+<?php require_once('templates/header.php') ?>
+
+<main>
+
+    <section id="warning" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="img-warning col-12 col-sm-3">
+                    <img src="res/img/warning.svg" alt="imagen de advertencia" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-6 align-items-center">
+                    <h2>
+                        ¡Hola! Todavía nuestro sitio está en construcción.
+                    </h2>
+                    <p>¡¡Pero no te preocupes!! Mientras avanzamos con esto, puedes empezas a gestionar tu perfil
+                        haciendo click <a href="login.php"><b>aquí</b></a></p>
+                    <p>O si eres nuevo, puedes crear tu usuario <a href="register.php"><b>aquí</b></a></p>
+                </div>
             </div>
         </div>
-    </nav>
-</header>
+    </section>
 
-<main></main>
+</main>
 
-<footer>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="redes col-12">
-                <ul>
-                    <li><a href="#" class="social fb"></a></li>
-                    <li><a href="#" class="social tw"></a></li>
-                    <li><a href="#" class="social ig"></a></li>
-                </ul>
-            </div>
-            <div class="bgfooter col-12"></div>
-            <div class="copy col-12">
-                <p>Todos los derechos reservados para @FrancoCinnante</p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-
+<?php require_once('templates/footer.php') ?>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script type="text/javascript" src="res/bootstrap/js/bootstrap.min.js"></script>
