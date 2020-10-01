@@ -1,5 +1,5 @@
 <?php
-require 'db/conexion.php';
+require 'classes/DBConnection.php';
 
 $seccion = $_GET['s'] ?? 'home';
 
@@ -12,6 +12,9 @@ $seccionesPermitidas = [
     ],
     'login' => [
         'title' => 'Ingresa y empieza a gestionar tu perfil'
+    ],
+    'panel-admin' => [
+        'title' => 'Panel Administrativo - Addcard'
     ]
 ];
 
@@ -44,7 +47,7 @@ if (isset($_SESSION['error'])) {
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="res/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="res/css/style.css">
     <link rel="icon" href="res/img/ico.svg">
     <title><?= $seccionesPermitidas[$seccion]['title']; ?></title>
@@ -87,8 +90,9 @@ if (isset($_SESSION['error'])) {
     } ?>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="res/bootstrap/js/bootstrap.min.js"></script>
 <script src="res/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

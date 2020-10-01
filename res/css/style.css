@@ -29,7 +29,7 @@
 /* INICIO */
 
 h1 {
-    font-size: 0px;
+    font-size: 0;
 }
 
 .logo {
@@ -41,6 +41,11 @@ h2 {
     font-weight: bold;
     font-size: 1.7em;
     margin-bottom: .7em;
+}
+
+h3 {
+    font-family: "Open Sans";
+    font-size: 1.5em;
 }
 
 main {
@@ -63,7 +68,11 @@ a.btn:hover {
     transition: color .5s;
 }
 
-input::placeholder {
+input::placeholder,
+select,
+option,
+#fechaReparacion,
+textarea{
     font-family: Lato-Light;
     font-weight: lighter;
     font-style: normal;
@@ -176,7 +185,7 @@ header h1 {
 }
 
 #iniciarSesion h1 {
-    font-size: 0px;
+    font-size: 0;
     text-align: center;
     background: url("../img/logo.svg") no-repeat center center;
     width: 200px;
@@ -225,11 +234,24 @@ header h1 {
 /* PANTALLA DE ADM USUARIOS*/
 /* INICIO */
 
-#list-user .table-responsive {
-    margin-top: 3em;
+#list-cars ul{
+    list-style: none;
+    margin: 0;
+    text-align: right;
+    padding: 0;
 }
 
-#list-user .edit-user {
+#list-cars ul li{
+    margin-right: .5em;
+    display: inline-block;
+}
+
+#list-cars ul li:last-child{
+    margin-right: 0;
+    display: inline-block;
+}
+
+#list-cars .edit-user {
     width: 25px;
     height: 25px;
     float: right;
